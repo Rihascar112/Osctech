@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string name = "Osctech";
+    std::string contact = "+256746711903";
+    std::string location = "Entebbe, Uganda";
+    char choice;
+
+    while (true) {
+        std::cout << "===== Company Info =====\n";
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Contact: " << contact << std::endl;
+        std::cout << "Location: " << location << std::endl;
+        std::cout << "=======================\n";
+        std::cout << "Show again? (y/n): ";
+        std::cin >> choice;
+
+        if (choice != 'y' && choice != 'Y') {
+            break;
+        }
+    }
+
+    std::cout << "Thank you for using the Osctech info program!\n";
+    return 0;
+}location
